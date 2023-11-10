@@ -5,6 +5,8 @@ import ItemCount from "./components/ItemCount/ItemCount";
 import "./App.css"
 import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap/dist/js/bootstrap.js"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -12,7 +14,8 @@ function App() {
         <div className="App">
             <NavBar />
             <ItemListContainer greeting={"Bienvenidos"} />
-            <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log("Cantidad agregada", quantity)}/>
+            <ItemCount initial={1} stock={10} onAdd={() => toast("Producto agregado correctamente!")}/>
+            <ToastContainer/>
         </div>
     )
 }
