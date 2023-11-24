@@ -1,19 +1,20 @@
 import CartWidget from "../CartWidget/CartWidget"
+import { Link } from "react-router-dom"
 
 
 const NavBar = () => {
     return (
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">CompraGamer</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <div className="container-fluid">
+                <Link className="navbar-brand" to="/">CompraGamer</Link>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="#">Placas de Video</a>
-                        <a class="nav-link" href="#">Memorias RAM</a>
-                        <a class="nav-link" href="#">Procesadores</a>
+                <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div className="navbar-nav Categories">
+                        <Link to={`/category/Placas-De-Video`} className="nav-link" aria-current="page">Placas de Video</Link>
+                        <Link to={`/category/Memorias-RAM`} className="nav-link">Memorias RAM</Link>
+                        <Link to={`/category/Procesadores`} className="nav-link">Procesadores</Link>
                     </div>
                 </div>
             </div>

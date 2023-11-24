@@ -1,0 +1,14 @@
+.Buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container {
+    padding: 5px;
+}
+
+.AgregarCarrito {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
