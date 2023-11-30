@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const Item = ({ id, name, img, price, stock }) => {
     return (
-        <div className="card m-2 border-warning" style={{ width: "18rem" }}>
+        <div className="card m-2 text-center border-warning" style={{ width: "18rem" }}>
             <img src={img} className="card-img-top" alt={name} />
             <div className="card-body">
                 <h2 className="card-title">{name}</h2>

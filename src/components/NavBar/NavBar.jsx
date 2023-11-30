@@ -6,7 +6,9 @@ const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-lg bg-warning">
             <div className="container-fluid">
-                <Link className="navbar-brand" to="/">CompraGamer</Link>
+                <Link className="navbar-brand" to="/">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PC_Gamer_logo_%282015-present%29.svg/2560px-PC_Gamer_logo_%282015-present%29.svg.png" alt="Logo de Pagina" height={50}/>
+                </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -18,7 +20,7 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
-            <CartWidget/>
+            <CartWidget />
         </nav>
 
     )
