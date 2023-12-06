@@ -17,6 +17,10 @@ const NavBar = () => {
                         <Link to={`/category/Placas-De-Video`} className="nav-link" aria-current="page">Placas de Video</Link>
                         <Link to={`/category/Memorias-RAM`} className="nav-link">Memorias RAM</Link>
                         <Link to={`/category/Procesadores`} className="nav-link">Procesadores</Link>
+                        <Link to={`/category/Fuentes`} className="nav-link">Fuentes</Link>
+                        <Link to={`/category/Motherboards`} className="nav-link">Motherboards</Link>
+                        <Link to={`/category/Almacenamiento`} className="nav-link">Almacenamiento</Link>
+                        <Link to={`/category/Gabinetes`} className="nav-link">Gabinetes</Link>
                     </div>
                 </div>
             </div>
