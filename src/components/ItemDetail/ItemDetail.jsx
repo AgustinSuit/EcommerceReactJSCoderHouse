@@ -29,10 +29,13 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
                 <p className="card-text">Categoría: {category}</p>
                 <p className="card-text">Descripción: {description}</p>
                 <p className="card-text">Precio: ${price}</p>
-                <footer className="ItemFooter d-flex justify-content-center">
+                <footer className="">
                     {
                         quantityAdded > 0 ? (
-                            <Link to="/cart" className="btn btn-warning">Terminar Compra</Link>
+                            <div className="row">
+                                <Link to="/cart" className="btn btn-warning mb-2">Terminar Compra</Link>
+                                <Link to="/" className="btn btn-warning">Seguir comprando</Link>
+                            </div>
                         ) : (
                             <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
                         )

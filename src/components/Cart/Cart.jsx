@@ -4,7 +4,7 @@ import CartItem from "../CartItem/CartItem";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
-    const { cart, clearCart, removeItem, totalQuantity } = useContext(CartContext)
+    const { cart, clearCart, removeItem, totalQuantity, total } = useContext(CartContext)
 
     if (totalQuantity === 0) {
         return (
@@ -16,12 +16,7 @@ const Cart = () => {
             </div>
         )
     }
-    let total = 0;
-    cart.map(p => total += p.price * p.quantity);
 
-    // const total = cart.reduce((acc, p) => {
-    //     return acc + (p.price * p.quantity);
-    // }, 0);
 
     return (
         <div className="row justify-content-center">
